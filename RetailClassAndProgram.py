@@ -6,44 +6,45 @@
 #Class definition (part 1) 
 
 class RetailItem():
-    def __init__(self,xxxxxxxxxxxxxxxxx):
-        self.__desc = xxxxxxxx
-        xxxxxx
-        xxxxxx
+    def __init__(self,desc,units,price):
+        self.__desc = desc
+        self.__units = units
+        self.__price = price
 
     def get_desc(self):
-        xxxxx
+        return self.__desc
+    
+    def get_units(self):
+        return self.__units
+    
+    def get_price(self):
+        return self.__price
 
     def set_desc(self, desc):
-        xxxx
-        xxxx
-
-    xxxx
-    xxxx
-    xxxx
-    xxxx
+        self.__desc = desc
+        
+    def set_units(self,units):
+        self.__units = units
 
 
-
-
-
-
+    def set_price(self,price):
+        self.__price = price
 
 
 # program (part 2)
 
 # create instances
-item1 = xxxxx
-item2 = xxxxx
-item3 = xxxxx
+item1 = RetailItem('Jacket',12,59.95)
+item2 = RetailItem('Designer Jeans',40,34.95)
+item3 = RetailItem('Shirt',20,24.95)
 
 
 
 # print out desc and price
 
-xxxx
-xxxx
-xxxx
+print(f"{item1.get_desc()}: ${item1.get_price()}")
+print(f"{item2.get_desc()}: ${item2.get_price()}")
+print(f"{item3.get_desc()}: ${item3.get_price()}")
 
         
 
